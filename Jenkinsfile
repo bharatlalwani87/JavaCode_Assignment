@@ -12,14 +12,14 @@ pipeline {
         stage('Compile') {
             steps {
                 // Compile the Java code
-                sh 'javac Hello.java'
+                bat 'javac Hello.java'
             }
         }
 
         stage('Run') {
             steps {
                 // Run the compiled Java program
-                sh 'java Hello'
+                bat 'java Hello'
             }
         }
     }
